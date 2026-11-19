@@ -42,21 +42,27 @@ What I take from this so far:
 1. **Splitting alone costs nothing.** With exact search, full results from every silo and
    merging by score (one shared embedding model), the merged top-10 is identical to the
    central top-10, as expected.
-2. **Per-silo approximate search did not get worse with more silos.** HNSW on smaller
-   per-silo indexes found slightly *more* of the exact neighbours (overlap 0.88 central vs
-   0.93 with 10 topic silos at efSearch=16), at the price of searching more indexes.
-3. **Result budgets are the big loss, and they hurt topic silos most.** When each silo may
-   return only ceil(10/S) results, topic silos drop from 46.0% to 13.8% at 10 silos, because
-   the relevant paragraphs for a question tend to sit in the same silo. Random silos lose
-   much less (35.8%).
-4. **Aggressive compression (IVF-PQ with 16 x 8-bit codes, no re-ranking) cost far more than
-   graph-based search** in this setting. I have not yet tried re-ranking or larger codes.
+2. **Per-silo HNSW looked better, but only because it does more work.** With 10 silos each
+   query searches 10 graphs (38.7% central vs 41.5% topic / 44.2% random silos at
+   efSearch=16). At comparable work a central HNSW with efSearch=64 reaches 44.0%, so this is
+   not a free gain. I am re-running the comparison at matched search effort.
+3. **Fixed per-silo result budgets are the big loss for topic silos.** When each silo may
+   return only ceil(10/S) results, topic silos drop from 46.0% to 13.8% at 10 silos. This is
+   largely structural: in 55% of questions both gold paragraphs are in the same topic silo
+   (80% at 2 silos, 65% at 5), so with one result per silo at most 45% of questions can ever
+   get both. Random silos lose much less (35.8%). The interesting question is how to share a
+   fixed total budget across silos.
+4. **IVF-PQ numbers are not a fair comparison yet.** Each silo trains its own PQ codebooks,
+   so their approximate scores are not comparable when merged, and there is no re-ranking.
+   I am fixing this (exact re-ranking of candidates, plus an IVF-Flat baseline).
 
 ## Limitations and next steps
 
 - Retrieval only. Next: generate answers with a small open model and check whether these
   retrieval losses change the final answer.
 - One embedding model shared by all silos (optimistic), one dataset, one run per setting.
+- The corpus is HotpotQA's distractor paragraphs, which were chosen to look like the gold ones,
+  so it is harder and smaller than a real corpus.
 - Timings were measured on a laptop CPU while other jobs were running, so I do not report them.
 - Next: smarter budgets (ask more results from the silos that look most relevant) and
   choosing silos with a language model.
