@@ -4,714 +4,2127 @@
   "S": 1,
   "index": "flat",
   "param": null,
-  "per_silo_k": "full",
-  "nn_recall": 1.0,
-  "gold_recall": 0.7005,
+  "budget": "full",
   "both_gold": 0.46,
-  "ms_per_q": 0.841
+  "both_gold_seed_sd": 0.0,
+  "ci95_seed0": [
+   0.429,
+   0.489
+  ],
+  "nn_recall": 1.0,
+  "work_per_q": 66581,
+  "colocated": 1.0
  },
  {
   "silos": "central",
   "S": 1,
   "index": "hnsw",
   "param": 16,
-  "per_silo_k": "full",
-  "nn_recall": 0.8788,
-  "gold_recall": 0.631,
+  "budget": "full",
   "both_gold": 0.387,
-  "ms_per_q": 0.064
+  "both_gold_seed_sd": 0.0,
+  "ci95_seed0": [
+   0.357,
+   0.415
+  ],
+  "nn_recall": 0.8788,
+  "work_per_q": 626,
+  "colocated": 1.0
  },
  {
   "silos": "central",
   "S": 1,
   "index": "hnsw",
   "param": 64,
-  "per_silo_k": "full",
-  "nn_recall": 0.9775,
-  "gold_recall": 0.6825,
+  "budget": "full",
   "both_gold": 0.44,
-  "ms_per_q": 0.254
+  "both_gold_seed_sd": 0.0,
+  "ci95_seed0": [
+   0.41,
+   0.469
+  ],
+  "nn_recall": 0.9775,
+  "work_per_q": 1645,
+  "colocated": 1.0
  },
  {
   "silos": "central",
   "S": 1,
-  "index": "ivfpq",
-  "param": 1,
-  "per_silo_k": "full",
-  "nn_recall": 0.2617,
-  "gold_recall": 0.28,
-  "both_gold": 0.096,
-  "ms_per_q": 0.034
- },
- {
-  "silos": "central",
-  "S": 1,
-  "index": "ivfpq",
-  "param": 8,
-  "per_silo_k": "full",
-  "nn_recall": 0.3321,
-  "gold_recall": 0.411,
-  "both_gold": 0.163,
-  "ms_per_q": 0.052
- },
- {
-  "silos": "topic",
-  "S": 2,
-  "index": "flat",
-  "param": null,
-  "per_silo_k": "full",
-  "nn_recall": 1.0,
-  "gold_recall": 0.7005,
-  "both_gold": 0.46,
-  "ms_per_q": 0.525
- },
- {
-  "silos": "topic",
-  "S": 2,
-  "index": "flat",
-  "param": null,
-  "per_silo_k": "budget",
-  "nn_recall": 0.5971,
-  "gold_recall": 0.6615,
-  "both_gold": 0.404,
-  "ms_per_q": 0.513
- },
- {
-  "silos": "topic",
-  "S": 2,
   "index": "hnsw",
-  "param": 16,
-  "per_silo_k": "full",
-  "nn_recall": 0.8943,
-  "gold_recall": 0.639,
-  "both_gold": 0.394,
-  "ms_per_q": 0.09
- },
- {
-  "silos": "topic",
-  "S": 2,
-  "index": "hnsw",
-  "param": 16,
-  "per_silo_k": "budget",
-  "nn_recall": 0.5777,
-  "gold_recall": 0.606,
-  "both_gold": 0.348,
-  "ms_per_q": 0.297
- },
- {
-  "silos": "topic",
-  "S": 2,
-  "index": "hnsw",
-  "param": 64,
-  "per_silo_k": "full",
-  "nn_recall": 0.9802,
-  "gold_recall": 0.6865,
-  "both_gold": 0.449,
-  "ms_per_q": 0.848
- },
- {
-  "silos": "topic",
-  "S": 2,
-  "index": "hnsw",
-  "param": 64,
-  "per_silo_k": "budget",
-  "nn_recall": 0.5948,
-  "gold_recall": 0.6495,
-  "both_gold": 0.396,
-  "ms_per_q": 0.828
- },
- {
-  "silos": "topic",
-  "S": 2,
-  "index": "ivfpq",
-  "param": 1,
-  "per_silo_k": "full",
-  "nn_recall": 0.2711,
-  "gold_recall": 0.2945,
-  "both_gold": 0.11,
-  "ms_per_q": 0.059
- },
- {
-  "silos": "topic",
-  "S": 2,
-  "index": "ivfpq",
-  "param": 1,
-  "per_silo_k": "budget",
-  "nn_recall": 0.2187,
-  "gold_recall": 0.2815,
-  "both_gold": 0.105,
-  "ms_per_q": 0.066
- },
- {
-  "silos": "topic",
-  "S": 2,
-  "index": "ivfpq",
-  "param": 8,
-  "per_silo_k": "full",
-  "nn_recall": 0.3451,
-  "gold_recall": 0.4165,
-  "both_gold": 0.171,
-  "ms_per_q": 0.102
- },
- {
-  "silos": "topic",
-  "S": 2,
-  "index": "ivfpq",
-  "param": 8,
-  "per_silo_k": "budget",
-  "nn_recall": 0.2757,
-  "gold_recall": 0.3865,
-  "both_gold": 0.156,
-  "ms_per_q": 0.091
- },
- {
-  "silos": "topic",
-  "S": 5,
-  "index": "flat",
-  "param": null,
-  "per_silo_k": "full",
-  "nn_recall": 1.0,
-  "gold_recall": 0.7005,
-  "both_gold": 0.46,
-  "ms_per_q": 0.58
- },
- {
-  "silos": "topic",
-  "S": 5,
-  "index": "flat",
-  "param": null,
-  "per_silo_k": "budget",
-  "nn_recall": 0.3452,
-  "gold_recall": 0.5715,
-  "both_gold": 0.27,
-  "ms_per_q": 0.558
- },
- {
-  "silos": "topic",
-  "S": 5,
-  "index": "hnsw",
-  "param": 16,
-  "per_silo_k": "full",
-  "nn_recall": 0.9077,
-  "gold_recall": 0.6425,
-  "both_gold": 0.39,
-  "ms_per_q": 0.482
- },
- {
-  "silos": "topic",
-  "S": 5,
-  "index": "hnsw",
-  "param": 16,
-  "per_silo_k": "budget",
-  "nn_recall": 0.3328,
-  "gold_recall": 0.5285,
-  "both_gold": 0.236,
-  "ms_per_q": 0.512
- },
- {
-  "silos": "topic",
-  "S": 5,
-  "index": "hnsw",
-  "param": 64,
-  "per_silo_k": "full",
-  "nn_recall": 0.9894,
-  "gold_recall": 0.6945,
+  "param": 160,
+  "budget": "full",
   "both_gold": 0.454,
-  "ms_per_q": 1.282
+  "both_gold_seed_sd": 0.0,
+  "ci95_seed0": [
+   0.423,
+   0.484
+  ],
+  "nn_recall": 0.9934,
+  "work_per_q": 3314,
+  "colocated": 1.0
+ },
+ {
+  "silos": "central",
+  "S": 1,
+  "index": "ivfflat",
+  "param": 1,
+  "budget": "full",
+  "both_gold": 0.144,
+  "both_gold_seed_sd": 0.0,
+  "ci95_seed0": [
+   0.121,
+   0.167
+  ],
+  "nn_recall": 0.4579,
+  "work_per_q": 298,
+  "colocated": 1.0
+ },
+ {
+  "silos": "central",
+  "S": 1,
+  "index": "ivfflat",
+  "param": 8,
+  "budget": "full",
+  "both_gold": 0.355,
+  "both_gold_seed_sd": 0.0,
+  "ci95_seed0": [
+   0.324,
+   0.382
+  ],
+  "nn_recall": 0.8228,
+  "work_per_q": 2239,
+  "colocated": 1.0
+ },
+ {
+  "silos": "central",
+  "S": 1,
+  "index": "ivfpq",
+  "param": 8,
+  "budget": "full",
+  "both_gold": 0.236,
+  "both_gold_seed_sd": 0.0,
+  "ci95_seed0": [
+   0.21,
+   0.262
+  ],
+  "nn_recall": 0.54,
+  "work_per_q": 2279,
+  "colocated": 1.0
+ },
+ {
+  "silos": "topic",
+  "S": 2,
+  "index": "flat",
+  "param": null,
+  "budget": "full",
+  "both_gold": 0.46,
+  "both_gold_seed_sd": 0.0,
+  "ci95_seed0": [
+   0.429,
+   0.489
+  ],
+  "nn_recall": 1.0,
+  "work_per_q": 66581,
+  "colocated": 0.773
+ },
+ {
+  "silos": "topic",
+  "S": 2,
+  "index": "flat",
+  "param": null,
+  "budget": "equal",
+  "both_gold": 0.407,
+  "both_gold_seed_sd": 0.005,
+  "ci95_seed0": [
+   0.374,
+   0.435
+  ],
+  "nn_recall": 0.6029,
+  "work_per_q": 66581,
+  "colocated": 0.773
+ },
+ {
+  "silos": "topic",
+  "S": 2,
+  "index": "flat",
+  "param": null,
+  "budget": "routed",
+  "both_gold": 0.4277,
+  "both_gold_seed_sd": 0.0025,
+  "ci95_seed0": [
+   0.393,
+   0.454
+  ],
+  "nn_recall": 0.8986,
+  "work_per_q": 66581,
+  "colocated": 0.773
+ },
+ {
+  "silos": "topic",
+  "S": 2,
+  "index": "hnsw",
+  "param": 16,
+  "budget": "full",
+  "both_gold": 0.3957,
+  "both_gold_seed_sd": 0.0046,
+  "ci95_seed0": [
+   0.362,
+   0.424
+  ],
+  "nn_recall": 0.8949,
+  "work_per_q": 1203,
+  "colocated": 0.773
+ },
+ {
+  "silos": "topic",
+  "S": 2,
+  "index": "hnsw",
+  "param": 16,
+  "budget": "equal",
+  "both_gold": 0.3503,
+  "both_gold_seed_sd": 0.0087,
+  "ci95_seed0": [
+   0.318,
+   0.377
+  ],
+  "nn_recall": 0.5825,
+  "work_per_q": 1203,
+  "colocated": 0.773
+ },
+ {
+  "silos": "topic",
+  "S": 2,
+  "index": "hnsw",
+  "param": 16,
+  "budget": "routed",
+  "both_gold": 0.3667,
+  "both_gold_seed_sd": 0.008,
+  "ci95_seed0": [
+   0.329,
+   0.39
+  ],
+  "nn_recall": 0.806,
+  "work_per_q": 1203,
+  "colocated": 0.773
+ },
+ {
+  "silos": "topic",
+  "S": 2,
+  "index": "hnsw",
+  "param": 64,
+  "budget": "full",
+  "both_gold": 0.4473,
+  "both_gold_seed_sd": 0.0024,
+  "ci95_seed0": [
+   0.418,
+   0.478
+  ],
+  "nn_recall": 0.9807,
+  "work_per_q": 3093,
+  "colocated": 0.773
+ },
+ {
+  "silos": "topic",
+  "S": 2,
+  "index": "hnsw",
+  "param": 64,
+  "budget": "equal",
+  "both_gold": 0.396,
+  "both_gold_seed_sd": 0.0065,
+  "ci95_seed0": [
+   0.366,
+   0.426
+  ],
+  "nn_recall": 0.6006,
+  "work_per_q": 3093,
+  "colocated": 0.773
+ },
+ {
+  "silos": "topic",
+  "S": 2,
+  "index": "hnsw",
+  "param": 64,
+  "budget": "routed",
+  "both_gold": 0.4147,
+  "both_gold_seed_sd": 0.0017,
+  "ci95_seed0": [
+   0.383,
+   0.441
+  ],
+  "nn_recall": 0.8817,
+  "work_per_q": 3093,
+  "colocated": 0.773
+ },
+ {
+  "silos": "topic",
+  "S": 2,
+  "index": "hnsw",
+  "param": 160,
+  "budget": "full",
+  "both_gold": 0.4553,
+  "both_gold_seed_sd": 0.0012,
+  "ci95_seed0": [
+   0.426,
+   0.486
+  ],
+  "nn_recall": 0.9947,
+  "work_per_q": 6207,
+  "colocated": 0.773
+ },
+ {
+  "silos": "topic",
+  "S": 2,
+  "index": "hnsw",
+  "param": 160,
+  "budget": "equal",
+  "both_gold": 0.404,
+  "both_gold_seed_sd": 0.0054,
+  "ci95_seed0": [
+   0.374,
+   0.434
+  ],
+  "nn_recall": 0.6023,
+  "work_per_q": 6207,
+  "colocated": 0.773
+ },
+ {
+  "silos": "topic",
+  "S": 2,
+  "index": "hnsw",
+  "param": 160,
+  "budget": "routed",
+  "both_gold": 0.4233,
+  "both_gold_seed_sd": 0.0012,
+  "ci95_seed0": [
+   0.392,
+   0.451
+  ],
+  "nn_recall": 0.8942,
+  "work_per_q": 6207,
+  "colocated": 0.773
+ },
+ {
+  "silos": "topic",
+  "S": 2,
+  "index": "ivfflat",
+  "param": 1,
+  "budget": "full",
+  "both_gold": 0.1667,
+  "both_gold_seed_sd": 0.0025,
+  "ci95_seed0": [
+   0.142,
+   0.19
+  ],
+  "nn_recall": 0.4647,
+  "work_per_q": 401,
+  "colocated": 0.773
+ },
+ {
+  "silos": "topic",
+  "S": 2,
+  "index": "ivfflat",
+  "param": 1,
+  "budget": "equal",
+  "both_gold": 0.154,
+  "both_gold_seed_sd": 0.0073,
+  "ci95_seed0": [
+   0.133,
+   0.177
+  ],
+  "nn_recall": 0.3748,
+  "work_per_q": 401,
+  "colocated": 0.773
+ },
+ {
+  "silos": "topic",
+  "S": 2,
+  "index": "ivfflat",
+  "param": 1,
+  "budget": "routed",
+  "both_gold": 0.1553,
+  "both_gold_seed_sd": 0.0026,
+  "ci95_seed0": [
+   0.132,
+   0.176
+  ],
+  "nn_recall": 0.4211,
+  "work_per_q": 401,
+  "colocated": 0.773
+ },
+ {
+  "silos": "topic",
+  "S": 2,
+  "index": "ivfflat",
+  "param": 8,
+  "budget": "full",
+  "both_gold": 0.3697,
+  "both_gold_seed_sd": 0.0026,
+  "ci95_seed0": [
+   0.336,
+   0.397
+  ],
+  "nn_recall": 0.8298,
+  "work_per_q": 3097,
+  "colocated": 0.773
+ },
+ {
+  "silos": "topic",
+  "S": 2,
+  "index": "ivfflat",
+  "param": 8,
+  "budget": "equal",
+  "both_gold": 0.3283,
+  "both_gold_seed_sd": 0.0062,
+  "ci95_seed0": [
+   0.297,
+   0.355
+  ],
+  "nn_recall": 0.5687,
+  "work_per_q": 3097,
+  "colocated": 0.773
+ },
+ {
+  "silos": "topic",
+  "S": 2,
+  "index": "ivfflat",
+  "param": 8,
+  "budget": "routed",
+  "both_gold": 0.3413,
+  "both_gold_seed_sd": 0.0034,
+  "ci95_seed0": [
+   0.309,
+   0.367
+  ],
+  "nn_recall": 0.7494,
+  "work_per_q": 3097,
+  "colocated": 0.773
+ },
+ {
+  "silos": "topic",
+  "S": 2,
+  "index": "ivfpq",
+  "param": 8,
+  "budget": "full",
+  "both_gold": 0.2927,
+  "both_gold_seed_sd": 0.006,
+  "ci95_seed0": [
+   0.273,
+   0.329
+  ],
+  "nn_recall": 0.6076,
+  "work_per_q": 3177,
+  "colocated": 0.773
+ },
+ {
+  "silos": "topic",
+  "S": 2,
+  "index": "ivfpq",
+  "param": 8,
+  "budget": "equal",
+  "both_gold": 0.275,
+  "both_gold_seed_sd": 0.0078,
+  "ci95_seed0": [
+   0.258,
+   0.313
+  ],
+  "nn_recall": 0.4954,
+  "work_per_q": 3177,
+  "colocated": 0.773
+ },
+ {
+  "silos": "topic",
+  "S": 2,
+  "index": "ivfpq",
+  "param": 8,
+  "budget": "routed",
+  "both_gold": 0.27,
+  "both_gold_seed_sd": 0.0022,
+  "ci95_seed0": [
+   0.246,
+   0.3
+  ],
+  "nn_recall": 0.5516,
+  "work_per_q": 3177,
+  "colocated": 0.773
+ },
+ {
+  "silos": "topic",
+  "S": 5,
+  "index": "flat",
+  "param": null,
+  "budget": "full",
+  "both_gold": 0.46,
+  "both_gold_seed_sd": 0.0,
+  "ci95_seed0": [
+   0.429,
+   0.489
+  ],
+  "nn_recall": 1.0,
+  "work_per_q": 66581,
+  "colocated": 0.612
+ },
+ {
+  "silos": "topic",
+  "S": 5,
+  "index": "flat",
+  "param": null,
+  "budget": "equal",
+  "both_gold": 0.2807,
+  "both_gold_seed_sd": 0.0117,
+  "ci95_seed0": [
+   0.242,
+   0.297
+  ],
+  "nn_recall": 0.3589,
+  "work_per_q": 66581,
+  "colocated": 0.612
+ },
+ {
+  "silos": "topic",
+  "S": 5,
+  "index": "flat",
+  "param": null,
+  "budget": "routed",
+  "both_gold": 0.379,
+  "both_gold_seed_sd": 0.0065,
+  "ci95_seed0": [
+   0.34,
+   0.398
+  ],
+  "nn_recall": 0.8177,
+  "work_per_q": 66581,
+  "colocated": 0.612
+ },
+ {
+  "silos": "topic",
+  "S": 5,
+  "index": "hnsw",
+  "param": 16,
+  "budget": "full",
+  "both_gold": 0.4003,
+  "both_gold_seed_sd": 0.0078,
+  "ci95_seed0": [
+   0.359,
+   0.419
+  ],
+  "nn_recall": 0.9116,
+  "work_per_q": 2778,
+  "colocated": 0.612
+ },
+ {
+  "silos": "topic",
+  "S": 5,
+  "index": "hnsw",
+  "param": 16,
+  "budget": "equal",
+  "both_gold": 0.2463,
+  "both_gold_seed_sd": 0.0073,
+  "ci95_seed0": [
+   0.209,
+   0.262
+  ],
+  "nn_recall": 0.3467,
+  "work_per_q": 2778,
+  "colocated": 0.612
+ },
+ {
+  "silos": "topic",
+  "S": 5,
+  "index": "hnsw",
+  "param": 16,
+  "budget": "routed",
+  "both_gold": 0.3343,
+  "both_gold_seed_sd": 0.0144,
+  "ci95_seed0": [
+   0.285,
+   0.343
+  ],
+  "nn_recall": 0.7489,
+  "work_per_q": 2778,
+  "colocated": 0.612
  },
  {
   "silos": "topic",
   "S": 5,
   "index": "hnsw",
   "param": 64,
-  "per_silo_k": "budget",
-  "nn_recall": 0.3439,
-  "gold_recall": 0.5665,
-  "both_gold": 0.268,
-  "ms_per_q": 1.289
+  "budget": "full",
+  "both_gold": 0.455,
+  "both_gold_seed_sd": 0.0008,
+  "ci95_seed0": [
+   0.424,
+   0.484
+  ],
+  "nn_recall": 0.9896,
+  "work_per_q": 7166,
+  "colocated": 0.612
  },
  {
   "silos": "topic",
   "S": 5,
-  "index": "ivfpq",
-  "param": 1,
-  "per_silo_k": "full",
-  "nn_recall": 0.2923,
-  "gold_recall": 0.3075,
-  "both_gold": 0.117,
-  "ms_per_q": 0.137
+  "index": "hnsw",
+  "param": 64,
+  "budget": "equal",
+  "both_gold": 0.277,
+  "both_gold_seed_sd": 0.0094,
+  "ci95_seed0": [
+   0.239,
+   0.294
+  ],
+  "nn_recall": 0.3574,
+  "work_per_q": 7166,
+  "colocated": 0.612
  },
  {
   "silos": "topic",
   "S": 5,
-  "index": "ivfpq",
+  "index": "hnsw",
+  "param": 64,
+  "budget": "routed",
+  "both_gold": 0.376,
+  "both_gold_seed_sd": 0.0065,
+  "ci95_seed0": [
+   0.336,
+   0.395
+  ],
+  "nn_recall": 0.8096,
+  "work_per_q": 7166,
+  "colocated": 0.612
+ },
+ {
+  "silos": "topic",
+  "S": 5,
+  "index": "hnsw",
+  "param": 160,
+  "budget": "full",
+  "both_gold": 0.4597,
+  "both_gold_seed_sd": 0.0005,
+  "ci95_seed0": [
+   0.428,
+   0.487
+  ],
+  "nn_recall": 0.9986,
+  "work_per_q": 14065,
+  "colocated": 0.612
+ },
+ {
+  "silos": "topic",
+  "S": 5,
+  "index": "hnsw",
+  "param": 160,
+  "budget": "equal",
+  "both_gold": 0.281,
+  "both_gold_seed_sd": 0.0116,
+  "ci95_seed0": [
+   0.242,
+   0.297
+  ],
+  "nn_recall": 0.3587,
+  "work_per_q": 14065,
+  "colocated": 0.612
+ },
+ {
+  "silos": "topic",
+  "S": 5,
+  "index": "hnsw",
+  "param": 160,
+  "budget": "routed",
+  "both_gold": 0.3793,
+  "both_gold_seed_sd": 0.0066,
+  "ci95_seed0": [
+   0.34,
+   0.398
+  ],
+  "nn_recall": 0.8168,
+  "work_per_q": 14065,
+  "colocated": 0.612
+ },
+ {
+  "silos": "topic",
+  "S": 5,
+  "index": "ivfflat",
   "param": 1,
-  "per_silo_k": "budget",
-  "nn_recall": 0.1577,
-  "gold_recall": 0.252,
-  "both_gold": 0.063,
-  "ms_per_q": 0.138
+  "budget": "full",
+  "both_gold": 0.167,
+  "both_gold_seed_sd": 0.0079,
+  "ci95_seed0": [
+   0.139,
+   0.187
+  ],
+  "nn_recall": 0.4682,
+  "work_per_q": 621,
+  "colocated": 0.612
+ },
+ {
+  "silos": "topic",
+  "S": 5,
+  "index": "ivfflat",
+  "param": 1,
+  "budget": "equal",
+  "both_gold": 0.104,
+  "both_gold_seed_sd": 0.0073,
+  "ci95_seed0": [
+   0.083,
+   0.121
+  ],
+  "nn_recall": 0.2443,
+  "work_per_q": 621,
+  "colocated": 0.612
+ },
+ {
+  "silos": "topic",
+  "S": 5,
+  "index": "ivfflat",
+  "param": 1,
+  "budget": "routed",
+  "both_gold": 0.1427,
+  "both_gold_seed_sd": 0.0031,
+  "ci95_seed0": [
+   0.12,
+   0.164
+  ],
+  "nn_recall": 0.3928,
+  "work_per_q": 621,
+  "colocated": 0.612
+ },
+ {
+  "silos": "topic",
+  "S": 5,
+  "index": "ivfflat",
+  "param": 8,
+  "budget": "full",
+  "both_gold": 0.3727,
+  "both_gold_seed_sd": 0.0026,
+  "ci95_seed0": [
+   0.341,
+   0.398
+  ],
+  "nn_recall": 0.835,
+  "work_per_q": 4840,
+  "colocated": 0.612
+ },
+ {
+  "silos": "topic",
+  "S": 5,
+  "index": "ivfflat",
+  "param": 8,
+  "budget": "equal",
+  "both_gold": 0.2357,
+  "both_gold_seed_sd": 0.0062,
+  "ci95_seed0": [
+   0.208,
+   0.26
+  ],
+  "nn_recall": 0.3362,
+  "work_per_q": 4840,
+  "colocated": 0.612
+ },
+ {
+  "silos": "topic",
+  "S": 5,
+  "index": "ivfflat",
+  "param": 8,
+  "budget": "routed",
+  "both_gold": 0.313,
+  "both_gold_seed_sd": 0.0037,
+  "ci95_seed0": [
+   0.281,
+   0.337
+  ],
+  "nn_recall": 0.6883,
+  "work_per_q": 4840,
+  "colocated": 0.612
  },
  {
   "silos": "topic",
   "S": 5,
   "index": "ivfpq",
   "param": 8,
-  "per_silo_k": "full",
-  "nn_recall": 0.3777,
-  "gold_recall": 0.436,
-  "both_gold": 0.178,
-  "ms_per_q": 0.194
+  "budget": "full",
+  "both_gold": 0.3257,
+  "both_gold_seed_sd": 0.0031,
+  "ci95_seed0": [
+   0.3,
+   0.361
+  ],
+  "nn_recall": 0.6874,
+  "work_per_q": 5040,
+  "colocated": 0.612
  },
  {
   "silos": "topic",
   "S": 5,
   "index": "ivfpq",
   "param": 8,
-  "per_silo_k": "budget",
-  "nn_recall": 0.1971,
-  "gold_recall": 0.3545,
-  "both_gold": 0.096,
-  "ms_per_q": 0.182
+  "budget": "equal",
+  "both_gold": 0.2093,
+  "both_gold_seed_sd": 0.0087,
+  "ci95_seed0": [
+   0.189,
+   0.241
+  ],
+  "nn_recall": 0.322,
+  "work_per_q": 5040,
+  "colocated": 0.612
+ },
+ {
+  "silos": "topic",
+  "S": 5,
+  "index": "ivfpq",
+  "param": 8,
+  "budget": "routed",
+  "both_gold": 0.273,
+  "both_gold_seed_sd": 0.0024,
+  "ci95_seed0": [
+   0.245,
+   0.301
+  ],
+  "nn_recall": 0.5707,
+  "work_per_q": 5040,
+  "colocated": 0.612
  },
  {
   "silos": "topic",
   "S": 10,
   "index": "flat",
   "param": null,
-  "per_silo_k": "full",
-  "nn_recall": 1.0,
-  "gold_recall": 0.7005,
+  "budget": "full",
   "both_gold": 0.46,
-  "ms_per_q": 0.572
+  "both_gold_seed_sd": 0.0,
+  "ci95_seed0": [
+   0.429,
+   0.489
+  ],
+  "nn_recall": 1.0,
+  "work_per_q": 66581,
+  "colocated": 0.5653
  },
  {
   "silos": "topic",
   "S": 10,
   "index": "flat",
   "param": null,
-  "per_silo_k": "budget",
-  "nn_recall": 0.253,
-  "gold_recall": 0.4785,
-  "both_gold": 0.138,
-  "ms_per_q": 0.617
+  "budget": "equal",
+  "both_gold": 0.1317,
+  "both_gold_seed_sd": 0.0119,
+  "ci95_seed0": [
+   0.117,
+   0.16
+  ],
+  "nn_recall": 0.2466,
+  "work_per_q": 66581,
+  "colocated": 0.5653
+ },
+ {
+  "silos": "topic",
+  "S": 10,
+  "index": "flat",
+  "param": null,
+  "budget": "routed",
+  "both_gold": 0.3643,
+  "both_gold_seed_sd": 0.0062,
+  "ci95_seed0": [
+   0.324,
+   0.386
+  ],
+  "nn_recall": 0.7785,
+  "work_per_q": 66581,
+  "colocated": 0.5653
  },
  {
   "silos": "topic",
   "S": 10,
   "index": "hnsw",
   "param": 16,
-  "per_silo_k": "full",
-  "nn_recall": 0.925,
-  "gold_recall": 0.6615,
+  "budget": "full",
   "both_gold": 0.415,
-  "ms_per_q": 0.157
+  "both_gold_seed_sd": 0.0041,
+  "ci95_seed0": [
+   0.384,
+   0.446
+  ],
+  "nn_recall": 0.9271,
+  "work_per_q": 5003,
+  "colocated": 0.5653
  },
  {
   "silos": "topic",
   "S": 10,
   "index": "hnsw",
   "param": 16,
-  "per_silo_k": "budget",
-  "nn_recall": 0.2427,
-  "gold_recall": 0.449,
-  "both_gold": 0.119,
-  "ms_per_q": 0.16
+  "budget": "equal",
+  "both_gold": 0.117,
+  "both_gold_seed_sd": 0.014,
+  "ci95_seed0": [
+   0.099,
+   0.138
+  ],
+  "nn_recall": 0.2365,
+  "work_per_q": 5003,
+  "colocated": 0.5653
+ },
+ {
+  "silos": "topic",
+  "S": 10,
+  "index": "hnsw",
+  "param": 16,
+  "budget": "routed",
+  "both_gold": 0.3277,
+  "both_gold_seed_sd": 0.005,
+  "ci95_seed0": [
+   0.291,
+   0.35
+  ],
+  "nn_recall": 0.7256,
+  "work_per_q": 5003,
+  "colocated": 0.5653
  },
  {
   "silos": "topic",
   "S": 10,
   "index": "hnsw",
   "param": 64,
-  "per_silo_k": "full",
-  "nn_recall": 0.9918,
-  "gold_recall": 0.6965,
-  "both_gold": 0.456,
-  "ms_per_q": 1.572
+  "budget": "full",
+  "both_gold": 0.4543,
+  "both_gold_seed_sd": 0.0031,
+  "ci95_seed0": [
+   0.425,
+   0.485
+  ],
+  "nn_recall": 0.9927,
+  "work_per_q": 12702,
+  "colocated": 0.5653
  },
  {
   "silos": "topic",
   "S": 10,
   "index": "hnsw",
   "param": 64,
-  "per_silo_k": "budget",
-  "nn_recall": 0.2517,
-  "gold_recall": 0.4755,
-  "both_gold": 0.137,
-  "ms_per_q": 1.438
+  "budget": "equal",
+  "both_gold": 0.13,
+  "both_gold_seed_sd": 0.0136,
+  "ci95_seed0": [
+   0.116,
+   0.159
+  ],
+  "nn_recall": 0.2456,
+  "work_per_q": 12702,
+  "colocated": 0.5653
  },
  {
   "silos": "topic",
   "S": 10,
-  "index": "ivfpq",
-  "param": 1,
-  "per_silo_k": "full",
-  "nn_recall": 0.3063,
-  "gold_recall": 0.306,
-  "both_gold": 0.114,
-  "ms_per_q": 0.273
+  "index": "hnsw",
+  "param": 64,
+  "budget": "routed",
+  "both_gold": 0.3597,
+  "both_gold_seed_sd": 0.0066,
+  "ci95_seed0": [
+   0.321,
+   0.381
+  ],
+  "nn_recall": 0.7735,
+  "work_per_q": 12702,
+  "colocated": 0.5653
  },
  {
   "silos": "topic",
   "S": 10,
-  "index": "ivfpq",
+  "index": "hnsw",
+  "param": 160,
+  "budget": "full",
+  "both_gold": 0.4597,
+  "both_gold_seed_sd": 0.0005,
+  "ci95_seed0": [
+   0.428,
+   0.488
+  ],
+  "nn_recall": 0.9994,
+  "work_per_q": 23638,
+  "colocated": 0.5653
+ },
+ {
+  "silos": "topic",
+  "S": 10,
+  "index": "hnsw",
+  "param": 160,
+  "budget": "equal",
+  "both_gold": 0.1317,
+  "both_gold_seed_sd": 0.0119,
+  "ci95_seed0": [
+   0.117,
+   0.16
+  ],
+  "nn_recall": 0.2464,
+  "work_per_q": 23638,
+  "colocated": 0.5653
+ },
+ {
+  "silos": "topic",
+  "S": 10,
+  "index": "hnsw",
+  "param": 160,
+  "budget": "routed",
+  "both_gold": 0.364,
+  "both_gold_seed_sd": 0.0067,
+  "ci95_seed0": [
+   0.323,
+   0.385
+  ],
+  "nn_recall": 0.7782,
+  "work_per_q": 23638,
+  "colocated": 0.5653
+ },
+ {
+  "silos": "topic",
+  "S": 10,
+  "index": "ivfflat",
   "param": 1,
-  "per_silo_k": "budget",
-  "nn_recall": 0.1185,
-  "gold_recall": 0.2065,
-  "both_gold": 0.023,
-  "ms_per_q": 0.106
+  "budget": "full",
+  "both_gold": 0.1637,
+  "both_gold_seed_sd": 0.0061,
+  "ci95_seed0": [
+   0.141,
+   0.187
+  ],
+  "nn_recall": 0.4654,
+  "work_per_q": 878,
+  "colocated": 0.5653
+ },
+ {
+  "silos": "topic",
+  "S": 10,
+  "index": "ivfflat",
+  "param": 1,
+  "budget": "equal",
+  "both_gold": 0.0443,
+  "both_gold_seed_sd": 0.005,
+  "ci95_seed0": [
+   0.038,
+   0.066
+  ],
+  "nn_recall": 0.1648,
+  "work_per_q": 878,
+  "colocated": 0.5653
+ },
+ {
+  "silos": "topic",
+  "S": 10,
+  "index": "ivfflat",
+  "param": 1,
+  "budget": "routed",
+  "both_gold": 0.1323,
+  "both_gold_seed_sd": 0.0054,
+  "ci95_seed0": [
+   0.104,
+   0.145
+  ],
+  "nn_recall": 0.3736,
+  "work_per_q": 878,
+  "colocated": 0.5653
+ },
+ {
+  "silos": "topic",
+  "S": 10,
+  "index": "ivfflat",
+  "param": 8,
+  "budget": "full",
+  "both_gold": 0.3853,
+  "both_gold_seed_sd": 0.0033,
+  "ci95_seed0": [
+   0.351,
+   0.411
+  ],
+  "nn_recall": 0.8439,
+  "work_per_q": 6869,
+  "colocated": 0.5653
+ },
+ {
+  "silos": "topic",
+  "S": 10,
+  "index": "ivfflat",
+  "param": 8,
+  "budget": "equal",
+  "both_gold": 0.111,
+  "both_gold_seed_sd": 0.0096,
+  "ci95_seed0": [
+   0.094,
+   0.133
+  ],
+  "nn_recall": 0.2288,
+  "work_per_q": 6869,
+  "colocated": 0.5653
+ },
+ {
+  "silos": "topic",
+  "S": 10,
+  "index": "ivfflat",
+  "param": 8,
+  "budget": "routed",
+  "both_gold": 0.3023,
+  "both_gold_seed_sd": 0.0108,
+  "ci95_seed0": [
+   0.26,
+   0.314
+  ],
+  "nn_recall": 0.6622,
+  "work_per_q": 6869,
+  "colocated": 0.5653
  },
  {
   "silos": "topic",
   "S": 10,
   "index": "ivfpq",
   "param": 8,
-  "per_silo_k": "full",
-  "nn_recall": 0.4026,
-  "gold_recall": 0.4575,
-  "both_gold": 0.197,
-  "ms_per_q": 0.296
+  "budget": "full",
+  "both_gold": 0.3497,
+  "both_gold_seed_sd": 0.0095,
+  "ci95_seed0": [
+   0.313,
+   0.371
+  ],
+  "nn_recall": 0.7373,
+  "work_per_q": 7269,
+  "colocated": 0.5653
  },
  {
   "silos": "topic",
   "S": 10,
   "index": "ivfpq",
   "param": 8,
-  "per_silo_k": "budget",
-  "nn_recall": 0.1493,
-  "gold_recall": 0.3015,
-  "both_gold": 0.049,
-  "ms_per_q": 0.326
+  "budget": "equal",
+  "both_gold": 0.1047,
+  "both_gold_seed_sd": 0.0117,
+  "ci95_seed0": [
+   0.089,
+   0.127
+  ],
+  "nn_recall": 0.2239,
+  "work_per_q": 7269,
+  "colocated": 0.5653
+ },
+ {
+  "silos": "topic",
+  "S": 10,
+  "index": "ivfpq",
+  "param": 8,
+  "budget": "routed",
+  "both_gold": 0.2757,
+  "both_gold_seed_sd": 0.0138,
+  "ci95_seed0": [
+   0.231,
+   0.283
+  ],
+  "nn_recall": 0.5793,
+  "work_per_q": 7269,
+  "colocated": 0.5653
  },
  {
   "silos": "random",
   "S": 2,
   "index": "flat",
   "param": null,
-  "per_silo_k": "full",
-  "nn_recall": 1.0,
-  "gold_recall": 0.7005,
+  "budget": "full",
   "both_gold": 0.46,
-  "ms_per_q": 0.54
- },
- {
-  "silos": "random",
-  "S": 2,
-  "index": "flat",
-  "param": null,
-  "per_silo_k": "budget",
-  "nn_recall": 0.8768,
-  "gold_recall": 0.698,
-  "both_gold": 0.459,
-  "ms_per_q": 0.544
- },
- {
-  "silos": "random",
-  "S": 2,
-  "index": "hnsw",
-  "param": 16,
-  "per_silo_k": "full",
-  "nn_recall": 0.9041,
-  "gold_recall": 0.6455,
-  "both_gold": 0.403,
-  "ms_per_q": 0.095
- },
- {
-  "silos": "random",
-  "S": 2,
-  "index": "hnsw",
-  "param": 16,
-  "per_silo_k": "budget",
-  "nn_recall": 0.8139,
-  "gold_recall": 0.6435,
-  "both_gold": 0.398,
-  "ms_per_q": 0.31
- },
- {
-  "silos": "random",
-  "S": 2,
-  "index": "hnsw",
-  "param": 64,
-  "per_silo_k": "full",
-  "nn_recall": 0.9853,
-  "gold_recall": 0.6885,
-  "both_gold": 0.448,
-  "ms_per_q": 0.275
- },
- {
-  "silos": "random",
-  "S": 2,
-  "index": "hnsw",
-  "param": 64,
-  "per_silo_k": "budget",
-  "nn_recall": 0.8685,
-  "gold_recall": 0.6855,
-  "both_gold": 0.445,
-  "ms_per_q": 0.867
- },
- {
-  "silos": "random",
-  "S": 2,
-  "index": "ivfpq",
-  "param": 1,
-  "per_silo_k": "full",
-  "nn_recall": 0.2572,
-  "gold_recall": 0.2805,
-  "both_gold": 0.094,
-  "ms_per_q": 0.089
- },
- {
-  "silos": "random",
-  "S": 2,
-  "index": "ivfpq",
-  "param": 1,
-  "per_silo_k": "budget",
-  "nn_recall": 0.2605,
-  "gold_recall": 0.287,
-  "both_gold": 0.095,
-  "ms_per_q": 0.069
- },
- {
-  "silos": "random",
-  "S": 2,
-  "index": "ivfpq",
-  "param": 8,
-  "per_silo_k": "full",
-  "nn_recall": 0.3149,
-  "gold_recall": 0.383,
-  "both_gold": 0.144,
-  "ms_per_q": 0.095
- },
- {
-  "silos": "random",
-  "S": 2,
-  "index": "ivfpq",
-  "param": 8,
-  "per_silo_k": "budget",
-  "nn_recall": 0.3235,
-  "gold_recall": 0.3955,
-  "both_gold": 0.149,
-  "ms_per_q": 0.088
- },
- {
-  "silos": "random",
-  "S": 5,
-  "index": "flat",
-  "param": null,
-  "per_silo_k": "full",
+  "both_gold_seed_sd": 0.0,
+  "ci95_seed0": [
+   0.429,
+   0.489
+  ],
   "nn_recall": 1.0,
-  "gold_recall": 0.7005,
+  "work_per_q": 66581,
+  "colocated": 0.4993
+ },
+ {
+  "silos": "random",
+  "S": 2,
+  "index": "flat",
+  "param": null,
+  "budget": "equal",
+  "both_gold": 0.4527,
+  "both_gold_seed_sd": 0.0045,
+  "ci95_seed0": [
+   0.427,
+   0.489
+  ],
+  "nn_recall": 0.8781,
+  "work_per_q": 66581,
+  "colocated": 0.4993
+ },
+ {
+  "silos": "random",
+  "S": 2,
+  "index": "flat",
+  "param": null,
+  "budget": "routed",
+  "both_gold": 0.4523,
+  "both_gold_seed_sd": 0.0048,
+  "ci95_seed0": [
+   0.427,
+   0.489
+  ],
+  "nn_recall": 0.878,
+  "work_per_q": 66581,
+  "colocated": 0.4993
+ },
+ {
+  "silos": "random",
+  "S": 2,
+  "index": "hnsw",
+  "param": 16,
+  "budget": "full",
+  "both_gold": 0.404,
+  "both_gold_seed_sd": 0.0014,
+  "ci95_seed0": [
+   0.373,
+   0.434
+  ],
+  "nn_recall": 0.9081,
+  "work_per_q": 1243,
+  "colocated": 0.4993
+ },
+ {
+  "silos": "random",
+  "S": 2,
+  "index": "hnsw",
+  "param": 16,
+  "budget": "equal",
+  "both_gold": 0.3957,
+  "both_gold_seed_sd": 0.0017,
+  "ci95_seed0": [
+   0.368,
+   0.427
+  ],
+  "nn_recall": 0.8164,
+  "work_per_q": 1243,
+  "colocated": 0.4993
+ },
+ {
+  "silos": "random",
+  "S": 2,
+  "index": "hnsw",
+  "param": 16,
+  "budget": "routed",
+  "both_gold": 0.3953,
+  "both_gold_seed_sd": 0.0019,
+  "ci95_seed0": [
+   0.368,
+   0.427
+  ],
+  "nn_recall": 0.8164,
+  "work_per_q": 1243,
+  "colocated": 0.4993
+ },
+ {
+  "silos": "random",
+  "S": 2,
+  "index": "hnsw",
+  "param": 64,
+  "budget": "full",
+  "both_gold": 0.444,
+  "both_gold_seed_sd": 0.0033,
+  "ci95_seed0": [
+   0.417,
+   0.479
+  ],
+  "nn_recall": 0.9842,
+  "work_per_q": 3187,
+  "colocated": 0.4993
+ },
+ {
+  "silos": "random",
+  "S": 2,
+  "index": "hnsw",
+  "param": 64,
+  "budget": "equal",
+  "both_gold": 0.4367,
+  "both_gold_seed_sd": 0.006,
+  "ci95_seed0": [
+   0.413,
+   0.475
+  ],
+  "nn_recall": 0.8689,
+  "work_per_q": 3187,
+  "colocated": 0.4993
+ },
+ {
+  "silos": "random",
+  "S": 2,
+  "index": "hnsw",
+  "param": 64,
+  "budget": "routed",
+  "both_gold": 0.4363,
+  "both_gold_seed_sd": 0.0063,
+  "ci95_seed0": [
+   0.413,
+   0.475
+  ],
+  "nn_recall": 0.8689,
+  "work_per_q": 3187,
+  "colocated": 0.4993
+ },
+ {
+  "silos": "random",
+  "S": 2,
+  "index": "hnsw",
+  "param": 160,
+  "budget": "full",
+  "both_gold": 0.4567,
+  "both_gold_seed_sd": 0.0009,
+  "ci95_seed0": [
+   0.425,
+   0.484
+  ],
+  "nn_recall": 0.9964,
+  "work_per_q": 6250,
+  "colocated": 0.4993
+ },
+ {
+  "silos": "random",
+  "S": 2,
+  "index": "hnsw",
+  "param": 160,
+  "budget": "equal",
+  "both_gold": 0.4493,
+  "both_gold_seed_sd": 0.0034,
+  "ci95_seed0": [
+   0.422,
+   0.484
+  ],
+  "nn_recall": 0.876,
+  "work_per_q": 6250,
+  "colocated": 0.4993
+ },
+ {
+  "silos": "random",
+  "S": 2,
+  "index": "hnsw",
+  "param": 160,
+  "budget": "routed",
+  "both_gold": 0.449,
+  "both_gold_seed_sd": 0.0037,
+  "ci95_seed0": [
+   0.422,
+   0.484
+  ],
+  "nn_recall": 0.8759,
+  "work_per_q": 6250,
+  "colocated": 0.4993
+ },
+ {
+  "silos": "random",
+  "S": 2,
+  "index": "ivfflat",
+  "param": 1,
+  "budget": "full",
+  "both_gold": 0.163,
+  "both_gold_seed_sd": 0.0106,
+  "ci95_seed0": [
+   0.146,
+   0.194
+  ],
+  "nn_recall": 0.4725,
+  "work_per_q": 425,
+  "colocated": 0.4993
+ },
+ {
+  "silos": "random",
+  "S": 2,
+  "index": "ivfflat",
+  "param": 1,
+  "budget": "equal",
+  "both_gold": 0.1607,
+  "both_gold_seed_sd": 0.0113,
+  "ci95_seed0": [
+   0.142,
+   0.191
+  ],
+  "nn_recall": 0.4517,
+  "work_per_q": 425,
+  "colocated": 0.4993
+ },
+ {
+  "silos": "random",
+  "S": 2,
+  "index": "ivfflat",
+  "param": 1,
+  "budget": "routed",
+  "both_gold": 0.1607,
+  "both_gold_seed_sd": 0.0113,
+  "ci95_seed0": [
+   0.142,
+   0.191
+  ],
+  "nn_recall": 0.4517,
+  "work_per_q": 425,
+  "colocated": 0.4993
+ },
+ {
+  "silos": "random",
+  "S": 2,
+  "index": "ivfflat",
+  "param": 8,
+  "budget": "full",
+  "both_gold": 0.3613,
+  "both_gold_seed_sd": 0.0047,
+  "ci95_seed0": [
+   0.338,
+   0.398
+  ],
+  "nn_recall": 0.8493,
+  "work_per_q": 3178,
+  "colocated": 0.4993
+ },
+ {
+  "silos": "random",
+  "S": 2,
+  "index": "ivfflat",
+  "param": 8,
+  "budget": "equal",
+  "both_gold": 0.3547,
+  "both_gold_seed_sd": 0.0057,
+  "ci95_seed0": [
+   0.334,
+   0.391
+  ],
+  "nn_recall": 0.7763,
+  "work_per_q": 3178,
+  "colocated": 0.4993
+ },
+ {
+  "silos": "random",
+  "S": 2,
+  "index": "ivfflat",
+  "param": 8,
+  "budget": "routed",
+  "both_gold": 0.3543,
+  "both_gold_seed_sd": 0.0061,
+  "ci95_seed0": [
+   0.334,
+   0.391
+  ],
+  "nn_recall": 0.7761,
+  "work_per_q": 3178,
+  "colocated": 0.4993
+ },
+ {
+  "silos": "random",
+  "S": 2,
+  "index": "ivfpq",
+  "param": 8,
+  "budget": "full",
+  "both_gold": 0.2797,
+  "both_gold_seed_sd": 0.0031,
+  "ci95_seed0": [
+   0.25,
+   0.305
+  ],
+  "nn_recall": 0.6381,
+  "work_per_q": 3258,
+  "colocated": 0.4993
+ },
+ {
+  "silos": "random",
+  "S": 2,
+  "index": "ivfpq",
+  "param": 8,
+  "budget": "equal",
+  "both_gold": 0.277,
+  "both_gold_seed_sd": 0.0065,
+  "ci95_seed0": [
+   0.249,
+   0.303
+  ],
+  "nn_recall": 0.6114,
+  "work_per_q": 3258,
+  "colocated": 0.4993
+ },
+ {
+  "silos": "random",
+  "S": 2,
+  "index": "ivfpq",
+  "param": 8,
+  "budget": "routed",
+  "both_gold": 0.2767,
+  "both_gold_seed_sd": 0.0069,
+  "ci95_seed0": [
+   0.249,
+   0.303
+  ],
+  "nn_recall": 0.6114,
+  "work_per_q": 3258,
+  "colocated": 0.4993
+ },
+ {
+  "silos": "random",
+  "S": 5,
+  "index": "flat",
+  "param": null,
+  "budget": "full",
   "both_gold": 0.46,
-  "ms_per_q": 0.974
- },
- {
-  "silos": "random",
-  "S": 5,
-  "index": "flat",
-  "param": null,
-  "per_silo_k": "budget",
-  "nn_recall": 0.7584,
-  "gold_recall": 0.68,
-  "both_gold": 0.426,
-  "ms_per_q": 0.844
- },
- {
-  "silos": "random",
-  "S": 5,
-  "index": "hnsw",
-  "param": 16,
-  "per_silo_k": "full",
-  "nn_recall": 0.9398,
-  "gold_recall": 0.6725,
-  "both_gold": 0.427,
-  "ms_per_q": 0.478
- },
- {
-  "silos": "random",
-  "S": 5,
-  "index": "hnsw",
-  "param": 16,
-  "per_silo_k": "budget",
-  "nn_recall": 0.7217,
-  "gold_recall": 0.656,
-  "both_gold": 0.399,
-  "ms_per_q": 0.153
- },
- {
-  "silos": "random",
-  "S": 5,
-  "index": "hnsw",
-  "param": 64,
-  "per_silo_k": "full",
-  "nn_recall": 0.9944,
-  "gold_recall": 0.698,
-  "both_gold": 0.457,
-  "ms_per_q": 0.386
- },
- {
-  "silos": "random",
-  "S": 5,
-  "index": "hnsw",
-  "param": 64,
-  "per_silo_k": "budget",
-  "nn_recall": 0.7554,
-  "gold_recall": 0.6775,
-  "both_gold": 0.423,
-  "ms_per_q": 1.365
- },
- {
-  "silos": "random",
-  "S": 5,
-  "index": "ivfpq",
-  "param": 1,
-  "per_silo_k": "full",
-  "nn_recall": 0.2477,
-  "gold_recall": 0.2855,
-  "both_gold": 0.093,
-  "ms_per_q": 0.157
- },
- {
-  "silos": "random",
-  "S": 5,
-  "index": "ivfpq",
-  "param": 1,
-  "per_silo_k": "budget",
-  "nn_recall": 0.2448,
-  "gold_recall": 0.2915,
-  "both_gold": 0.095,
-  "ms_per_q": 0.062
- },
- {
-  "silos": "random",
-  "S": 5,
-  "index": "ivfpq",
-  "param": 8,
-  "per_silo_k": "full",
-  "nn_recall": 0.2977,
-  "gold_recall": 0.3825,
-  "both_gold": 0.14,
-  "ms_per_q": 0.186
- },
- {
-  "silos": "random",
-  "S": 5,
-  "index": "ivfpq",
-  "param": 8,
-  "per_silo_k": "budget",
-  "nn_recall": 0.3039,
-  "gold_recall": 0.402,
-  "both_gold": 0.158,
-  "ms_per_q": 0.18
- },
- {
-  "silos": "random",
-  "S": 10,
-  "index": "flat",
-  "param": null,
-  "per_silo_k": "full",
+  "both_gold_seed_sd": 0.0,
+  "ci95_seed0": [
+   0.429,
+   0.489
+  ],
   "nn_recall": 1.0,
-  "gold_recall": 0.7005,
+  "work_per_q": 66581,
+  "colocated": 0.2077
+ },
+ {
+  "silos": "random",
+  "S": 5,
+  "index": "flat",
+  "param": null,
+  "budget": "equal",
+  "both_gold": 0.4223,
+  "both_gold_seed_sd": 0.0052,
+  "ci95_seed0": [
+   0.395,
+   0.455
+  ],
+  "nn_recall": 0.7598,
+  "work_per_q": 66581,
+  "colocated": 0.2077
+ },
+ {
+  "silos": "random",
+  "S": 5,
+  "index": "flat",
+  "param": null,
+  "budget": "routed",
+  "both_gold": 0.4223,
+  "both_gold_seed_sd": 0.0052,
+  "ci95_seed0": [
+   0.395,
+   0.455
+  ],
+  "nn_recall": 0.7599,
+  "work_per_q": 66581,
+  "colocated": 0.2077
+ },
+ {
+  "silos": "random",
+  "S": 5,
+  "index": "hnsw",
+  "param": 16,
+  "budget": "full",
+  "both_gold": 0.4203,
+  "both_gold_seed_sd": 0.0053,
+  "ci95_seed0": [
+   0.395,
+   0.458
+  ],
+  "nn_recall": 0.9396,
+  "work_per_q": 2824,
+  "colocated": 0.2077
+ },
+ {
+  "silos": "random",
+  "S": 5,
+  "index": "hnsw",
+  "param": 16,
+  "budget": "equal",
+  "both_gold": 0.3853,
+  "both_gold_seed_sd": 0.0119,
+  "ci95_seed0": [
+   0.368,
+   0.429
+  ],
+  "nn_recall": 0.7247,
+  "work_per_q": 2824,
+  "colocated": 0.2077
+ },
+ {
+  "silos": "random",
+  "S": 5,
+  "index": "hnsw",
+  "param": 16,
+  "budget": "routed",
+  "both_gold": 0.3853,
+  "both_gold_seed_sd": 0.0119,
+  "ci95_seed0": [
+   0.368,
+   0.429
+  ],
+  "nn_recall": 0.7247,
+  "work_per_q": 2824,
+  "colocated": 0.2077
+ },
+ {
+  "silos": "random",
+  "S": 5,
+  "index": "hnsw",
+  "param": 64,
+  "budget": "full",
+  "both_gold": 0.4557,
+  "both_gold_seed_sd": 0.0009,
+  "ci95_seed0": [
+   0.427,
+   0.486
+  ],
+  "nn_recall": 0.9941,
+  "work_per_q": 7219,
+  "colocated": 0.2077
+ },
+ {
+  "silos": "random",
+  "S": 5,
+  "index": "hnsw",
+  "param": 64,
+  "budget": "equal",
+  "both_gold": 0.4183,
+  "both_gold_seed_sd": 0.0052,
+  "ci95_seed0": [
+   0.393,
+   0.453
+  ],
+  "nn_recall": 0.7564,
+  "work_per_q": 7219,
+  "colocated": 0.2077
+ },
+ {
+  "silos": "random",
+  "S": 5,
+  "index": "hnsw",
+  "param": 64,
+  "budget": "routed",
+  "both_gold": 0.4183,
+  "both_gold_seed_sd": 0.0052,
+  "ci95_seed0": [
+   0.393,
+   0.453
+  ],
+  "nn_recall": 0.7565,
+  "work_per_q": 7219,
+  "colocated": 0.2077
+ },
+ {
+  "silos": "random",
+  "S": 5,
+  "index": "hnsw",
+  "param": 160,
+  "budget": "full",
   "both_gold": 0.46,
-  "ms_per_q": 0.537
+  "both_gold_seed_sd": 0.0,
+  "ci95_seed0": [
+   0.429,
+   0.489
+  ],
+  "nn_recall": 0.9994,
+  "work_per_q": 13701,
+  "colocated": 0.2077
+ },
+ {
+  "silos": "random",
+  "S": 5,
+  "index": "hnsw",
+  "param": 160,
+  "budget": "equal",
+  "both_gold": 0.4223,
+  "both_gold_seed_sd": 0.0052,
+  "ci95_seed0": [
+   0.395,
+   0.455
+  ],
+  "nn_recall": 0.7594,
+  "work_per_q": 13701,
+  "colocated": 0.2077
+ },
+ {
+  "silos": "random",
+  "S": 5,
+  "index": "hnsw",
+  "param": 160,
+  "budget": "routed",
+  "both_gold": 0.4223,
+  "both_gold_seed_sd": 0.0052,
+  "ci95_seed0": [
+   0.395,
+   0.455
+  ],
+  "nn_recall": 0.7594,
+  "work_per_q": 13701,
+  "colocated": 0.2077
+ },
+ {
+  "silos": "random",
+  "S": 5,
+  "index": "ivfflat",
+  "param": 1,
+  "budget": "full",
+  "both_gold": 0.1777,
+  "both_gold_seed_sd": 0.0037,
+  "ci95_seed0": [
+   0.158,
+   0.206
+  ],
+  "nn_recall": 0.4995,
+  "work_per_q": 675,
+  "colocated": 0.2077
+ },
+ {
+  "silos": "random",
+  "S": 5,
+  "index": "ivfflat",
+  "param": 1,
+  "budget": "equal",
+  "both_gold": 0.1657,
+  "both_gold_seed_sd": 0.0078,
+  "ci95_seed0": [
+   0.152,
+   0.199
+  ],
+  "nn_recall": 0.4304,
+  "work_per_q": 675,
+  "colocated": 0.2077
+ },
+ {
+  "silos": "random",
+  "S": 5,
+  "index": "ivfflat",
+  "param": 1,
+  "budget": "routed",
+  "both_gold": 0.1657,
+  "both_gold_seed_sd": 0.0078,
+  "ci95_seed0": [
+   0.152,
+   0.199
+  ],
+  "nn_recall": 0.4304,
+  "work_per_q": 675,
+  "colocated": 0.2077
+ },
+ {
+  "silos": "random",
+  "S": 5,
+  "index": "ivfflat",
+  "param": 8,
+  "budget": "full",
+  "both_gold": 0.389,
+  "both_gold_seed_sd": 0.0024,
+  "ci95_seed0": [
+   0.36,
+   0.419
+  ],
+  "nn_recall": 0.8845,
+  "work_per_q": 5023,
+  "colocated": 0.2077
+ },
+ {
+  "silos": "random",
+  "S": 5,
+  "index": "ivfflat",
+  "param": 8,
+  "budget": "equal",
+  "both_gold": 0.3587,
+  "both_gold_seed_sd": 0.0009,
+  "ci95_seed0": [
+   0.33,
+   0.388
+  ],
+  "nn_recall": 0.6992,
+  "work_per_q": 5023,
+  "colocated": 0.2077
+ },
+ {
+  "silos": "random",
+  "S": 5,
+  "index": "ivfflat",
+  "param": 8,
+  "budget": "routed",
+  "both_gold": 0.3587,
+  "both_gold_seed_sd": 0.0009,
+  "ci95_seed0": [
+   0.33,
+   0.388
+  ],
+  "nn_recall": 0.6993,
+  "work_per_q": 5023,
+  "colocated": 0.2077
+ },
+ {
+  "silos": "random",
+  "S": 5,
+  "index": "ivfpq",
+  "param": 8,
+  "budget": "full",
+  "both_gold": 0.3457,
+  "both_gold_seed_sd": 0.0107,
+  "ci95_seed0": [
+   0.304,
+   0.361
+  ],
+  "nn_recall": 0.7586,
+  "work_per_q": 5223,
+  "colocated": 0.2077
+ },
+ {
+  "silos": "random",
+  "S": 5,
+  "index": "ivfpq",
+  "param": 8,
+  "budget": "equal",
+  "both_gold": 0.317,
+  "both_gold_seed_sd": 0.0086,
+  "ci95_seed0": [
+   0.28,
+   0.335
+  ],
+  "nn_recall": 0.6274,
+  "work_per_q": 5223,
+  "colocated": 0.2077
+ },
+ {
+  "silos": "random",
+  "S": 5,
+  "index": "ivfpq",
+  "param": 8,
+  "budget": "routed",
+  "both_gold": 0.317,
+  "both_gold_seed_sd": 0.0086,
+  "ci95_seed0": [
+   0.28,
+   0.335
+  ],
+  "nn_recall": 0.6274,
+  "work_per_q": 5223,
+  "colocated": 0.2077
  },
  {
   "silos": "random",
   "S": 10,
   "index": "flat",
   "param": null,
-  "per_silo_k": "budget",
-  "nn_recall": 0.648,
-  "gold_recall": 0.6355,
-  "both_gold": 0.358,
-  "ms_per_q": 0.527
+  "budget": "full",
+  "both_gold": 0.46,
+  "both_gold_seed_sd": 0.0,
+  "ci95_seed0": [
+   0.429,
+   0.489
+  ],
+  "nn_recall": 1.0,
+  "work_per_q": 66581,
+  "colocated": 0.1057
+ },
+ {
+  "silos": "random",
+  "S": 10,
+  "index": "flat",
+  "param": null,
+  "budget": "equal",
+  "both_gold": 0.3633,
+  "both_gold_seed_sd": 0.0045,
+  "ci95_seed0": [
+   0.329,
+   0.386
+  ],
+  "nn_recall": 0.6514,
+  "work_per_q": 66581,
+  "colocated": 0.1057
+ },
+ {
+  "silos": "random",
+  "S": 10,
+  "index": "flat",
+  "param": null,
+  "budget": "routed",
+  "both_gold": 0.3633,
+  "both_gold_seed_sd": 0.0045,
+  "ci95_seed0": [
+   0.329,
+   0.386
+  ],
+  "nn_recall": 0.6514,
+  "work_per_q": 66581,
+  "colocated": 0.1057
  },
  {
   "silos": "random",
   "S": 10,
   "index": "hnsw",
   "param": 16,
-  "per_silo_k": "full",
-  "nn_recall": 0.9612,
-  "gold_recall": 0.682,
-  "both_gold": 0.442,
-  "ms_per_q": 0.505
+  "budget": "full",
+  "both_gold": 0.437,
+  "both_gold_seed_sd": 0.0037,
+  "ci95_seed0": [
+   0.413,
+   0.472
+  ],
+  "nn_recall": 0.9632,
+  "work_per_q": 5149,
+  "colocated": 0.1057
  },
  {
   "silos": "random",
   "S": 10,
   "index": "hnsw",
   "param": 16,
-  "per_silo_k": "budget",
-  "nn_recall": 0.6277,
-  "gold_recall": 0.618,
-  "both_gold": 0.343,
-  "ms_per_q": 0.153
+  "budget": "equal",
+  "both_gold": 0.344,
+  "both_gold_seed_sd": 0.0022,
+  "ci95_seed0": [
+   0.315,
+   0.372
+  ],
+  "nn_recall": 0.6322,
+  "work_per_q": 5149,
+  "colocated": 0.1057
+ },
+ {
+  "silos": "random",
+  "S": 10,
+  "index": "hnsw",
+  "param": 16,
+  "budget": "routed",
+  "both_gold": 0.344,
+  "both_gold_seed_sd": 0.0022,
+  "ci95_seed0": [
+   0.315,
+   0.372
+  ],
+  "nn_recall": 0.6322,
+  "work_per_q": 5149,
+  "colocated": 0.1057
  },
  {
   "silos": "random",
   "S": 10,
   "index": "hnsw",
   "param": 64,
-  "per_silo_k": "full",
-  "nn_recall": 0.9975,
-  "gold_recall": 0.698,
-  "both_gold": 0.457,
-  "ms_per_q": 1.626
+  "budget": "full",
+  "both_gold": 0.458,
+  "both_gold_seed_sd": 0.0008,
+  "ci95_seed0": [
+   0.425,
+   0.486
+  ],
+  "nn_recall": 0.9974,
+  "work_per_q": 12994,
+  "colocated": 0.1057
  },
  {
   "silos": "random",
   "S": 10,
   "index": "hnsw",
   "param": 64,
-  "per_silo_k": "budget",
-  "nn_recall": 0.647,
-  "gold_recall": 0.6335,
-  "both_gold": 0.357,
-  "ms_per_q": 1.555
+  "budget": "equal",
+  "both_gold": 0.3623,
+  "both_gold_seed_sd": 0.0041,
+  "ci95_seed0": [
+   0.329,
+   0.386
+  ],
+  "nn_recall": 0.65,
+  "work_per_q": 12994,
+  "colocated": 0.1057
  },
  {
   "silos": "random",
   "S": 10,
-  "index": "ivfpq",
-  "param": 1,
-  "per_silo_k": "full",
-  "nn_recall": 0.2555,
-  "gold_recall": 0.295,
-  "both_gold": 0.092,
-  "ms_per_q": 0.266
+  "index": "hnsw",
+  "param": 64,
+  "budget": "routed",
+  "both_gold": 0.3623,
+  "both_gold_seed_sd": 0.0041,
+  "ci95_seed0": [
+   0.329,
+   0.386
+  ],
+  "nn_recall": 0.65,
+  "work_per_q": 12994,
+  "colocated": 0.1057
  },
  {
   "silos": "random",
   "S": 10,
-  "index": "ivfpq",
+  "index": "hnsw",
+  "param": 160,
+  "budget": "full",
+  "both_gold": 0.46,
+  "both_gold_seed_sd": 0.0,
+  "ci95_seed0": [
+   0.429,
+   0.489
+  ],
+  "nn_recall": 0.9998,
+  "work_per_q": 23633,
+  "colocated": 0.1057
+ },
+ {
+  "silos": "random",
+  "S": 10,
+  "index": "hnsw",
+  "param": 160,
+  "budget": "equal",
+  "both_gold": 0.3633,
+  "both_gold_seed_sd": 0.0045,
+  "ci95_seed0": [
+   0.329,
+   0.386
+  ],
+  "nn_recall": 0.6513,
+  "work_per_q": 23633,
+  "colocated": 0.1057
+ },
+ {
+  "silos": "random",
+  "S": 10,
+  "index": "hnsw",
+  "param": 160,
+  "budget": "routed",
+  "both_gold": 0.3633,
+  "both_gold_seed_sd": 0.0045,
+  "ci95_seed0": [
+   0.329,
+   0.386
+  ],
+  "nn_recall": 0.6513,
+  "work_per_q": 23633,
+  "colocated": 0.1057
+ },
+ {
+  "silos": "random",
+  "S": 10,
+  "index": "ivfflat",
   "param": 1,
-  "per_silo_k": "budget",
-  "nn_recall": 0.2363,
-  "gold_recall": 0.295,
-  "both_gold": 0.084,
-  "ms_per_q": 0.21
+  "budget": "full",
+  "both_gold": 0.175,
+  "both_gold_seed_sd": 0.0094,
+  "ci95_seed0": [
+   0.152,
+   0.2
+  ],
+  "nn_recall": 0.5283,
+  "work_per_q": 973,
+  "colocated": 0.1057
+ },
+ {
+  "silos": "random",
+  "S": 10,
+  "index": "ivfflat",
+  "param": 1,
+  "budget": "equal",
+  "both_gold": 0.1413,
+  "both_gold_seed_sd": 0.004,
+  "ci95_seed0": [
+   0.117,
+   0.16
+  ],
+  "nn_recall": 0.3957,
+  "work_per_q": 973,
+  "colocated": 0.1057
+ },
+ {
+  "silos": "random",
+  "S": 10,
+  "index": "ivfflat",
+  "param": 1,
+  "budget": "routed",
+  "both_gold": 0.1413,
+  "both_gold_seed_sd": 0.004,
+  "ci95_seed0": [
+   0.117,
+   0.16
+  ],
+  "nn_recall": 0.3957,
+  "work_per_q": 973,
+  "colocated": 0.1057
+ },
+ {
+  "silos": "random",
+  "S": 10,
+  "index": "ivfflat",
+  "param": 8,
+  "budget": "full",
+  "both_gold": 0.4053,
+  "both_gold_seed_sd": 0.0063,
+  "ci95_seed0": [
+   0.383,
+   0.443
+  ],
+  "nn_recall": 0.9085,
+  "work_per_q": 7087,
+  "colocated": 0.1057
+ },
+ {
+  "silos": "random",
+  "S": 10,
+  "index": "ivfflat",
+  "param": 8,
+  "budget": "equal",
+  "both_gold": 0.3203,
+  "both_gold_seed_sd": 0.0033,
+  "ci95_seed0": [
+   0.294,
+   0.352
+  ],
+  "nn_recall": 0.6107,
+  "work_per_q": 7087,
+  "colocated": 0.1057
+ },
+ {
+  "silos": "random",
+  "S": 10,
+  "index": "ivfflat",
+  "param": 8,
+  "budget": "routed",
+  "both_gold": 0.3203,
+  "both_gold_seed_sd": 0.0033,
+  "ci95_seed0": [
+   0.294,
+   0.352
+  ],
+  "nn_recall": 0.6107,
+  "work_per_q": 7087,
+  "colocated": 0.1057
  },
  {
   "silos": "random",
   "S": 10,
   "index": "ivfpq",
   "param": 8,
-  "per_silo_k": "full",
-  "nn_recall": 0.3067,
-  "gold_recall": 0.397,
-  "both_gold": 0.144,
-  "ms_per_q": 0.348
+  "budget": "full",
+  "both_gold": 0.3797,
+  "both_gold_seed_sd": 0.0078,
+  "ci95_seed0": [
+   0.361,
+   0.42
+  ],
+  "nn_recall": 0.8388,
+  "work_per_q": 7487,
+  "colocated": 0.1057
  },
  {
   "silos": "random",
   "S": 10,
   "index": "ivfpq",
   "param": 8,
-  "per_silo_k": "budget",
-  "nn_recall": 0.2942,
-  "gold_recall": 0.4035,
-  "both_gold": 0.138,
-  "ms_per_q": 0.32
+  "budget": "equal",
+  "both_gold": 0.3003,
+  "both_gold_seed_sd": 0.0029,
+  "ci95_seed0": [
+   0.272,
+   0.328
+  ],
+  "nn_recall": 0.579,
+  "work_per_q": 7487,
+  "colocated": 0.1057
+ },
+ {
+  "silos": "random",
+  "S": 10,
+  "index": "ivfpq",
+  "param": 8,
+  "budget": "routed",
+  "both_gold": 0.3003,
+  "both_gold_seed_sd": 0.0029,
+  "ci95_seed0": [
+   0.272,
+   0.328
+  ],
+  "nn_recall": 0.579,
+  "work_per_q": 7487,
+  "colocated": 0.1057
  }
 ]
