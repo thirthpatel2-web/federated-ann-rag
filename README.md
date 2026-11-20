@@ -66,6 +66,13 @@ What I take from this:
 4. **Routing the same total budget by silo similarity recovers most of that loss** (13.2% to
    36.4% at 10 topic silos). With random silos the centroids are nearly identical, so routing
    cannot help and equals the equal split (36.3%).
+   Because most silos get a budget of zero, they need not be searched at all: each query then
+   searches on average 2.2 of 10 silos, about 15,400 distance computations instead of 66,581
+   (77% less) for the same 36.4% (`routing_cost.py`, 3 seeds).
+6. **Nearest-neighbour recall underrates what RAG keeps.** With 5 topic silos and an equal
+   budget, only 36% of the exact central top-10 survives, but the both-gold rate keeps 61% of
+   its central value (28.1% vs 46.0%). A budget predictor trained on nearest-neighbour labels
+   may therefore optimise the wrong target.
 5. **Compression still loses candidates.** Even with exact re-ranking, IVF-PQ found fewer gold
    pairs than IVF-Flat at the same nprobe (23.6% vs 35.5% centrally).
 
@@ -90,4 +97,5 @@ pip install faiss-cpu sentence-transformers pyarrow matplotlib numpy
 python prepare.py 1000      # corpus, questions, embeddings (~40 min on a laptop CPU)
 python federated_ann.py     # all settings -> results/results.json (~45 min)
 python plot.py              # charts
+python routing_cost.py      # search cost when zero-budget silos are skipped
 ```

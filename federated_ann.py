@@ -139,50 +139,51 @@ _, exact_top = exact.search(Q, K)
 
 CONFIGS = {"flat": [None], "hnsw": [16, 64, 160], "ivfflat": [1, 8], "ivfpq": [8]}
 rows = []
-for how, S in [("central", 1)] + [(h, s) for h in ("topic", "random") for s in (2, 5, 10)]:
-    acc = {}  # (kind, param, mode) -> list over seeds of (both_gold vector, nn, work)
-    coloc = []
-    for seed in (SEEDS if S > 1 else [0]):
-        silos = make_silos(S, how, seed)
-        silo_of = np.empty(n, dtype=int)
-        for s, ids in enumerate(silos):
-            silo_of[ids] = s
-        coloc.append(float(np.mean(silo_of[gold[:, 0]] == silo_of[gold[:, 1]])))
-        routed = allocate(silos) if S > 1 else None
-        for kind, params in CONFIGS.items():
-            indexes = []
-            for ids in silos:
-                index = build(P[ids], kind)
-                index.add(P[ids])
-                indexes.append(index)
-            for param in params:
-                per_silo, work = [], 0.0
-                for ids, index in zip(silos, indexes):
-                    set_param(index, kind, param)
-                    sc, local, w = search_counting_work(index, kind, min(K, len(ids)))
-                    gi = np.where(local >= 0, ids[np.clip(local, 0, None)], -1)
-                    per_silo.append((sc, gi))
-                    work += w
-                modes = {"full": np.full((nq, S), K)}
-                if S > 1:
-                    modes["equal"] = np.full((nq, S), math.ceil(K / S))
-                    modes["routed"] = routed
-                for mode, budgets in modes.items():
-                    top = merge(per_silo, budgets)
-                    nn = float(np.mean([len(set(a) & set(b)) / K for a, b in zip(top, exact_top)]))
-                    acc.setdefault((kind, param, mode), []).append((both_gold(top), nn, work))
-    for (kind, param, mode), runs in acc.items():
-        bg = [r[0].mean() for r in runs]
-        lo, hi = bootstrap_ci(runs[0][0])
-        row = {"silos": how, "S": S, "index": kind, "param": param, "budget": mode,
-               "both_gold": round(float(np.mean(bg)), 4), "both_gold_seed_sd": round(float(np.std(bg)), 4),
-               "ci95_seed0": [round(lo, 4), round(hi, 4)],
-               "nn_recall": round(float(np.mean([r[1] for r in runs])), 4),
-               "work_per_q": round(float(np.mean([r[2] for r in runs]))),
-               "colocated": round(float(np.mean(coloc)), 4)}
-        rows.append(row)
-        print(json.dumps(row), flush=True)
+if __name__ == "__main__":
+    for how, S in [("central", 1)] + [(h, s) for h in ("topic", "random") for s in (2, 5, 10)]:
+        acc = {}  # (kind, param, mode) -> list over seeds of (both_gold vector, nn, work)
+        coloc = []
+        for seed in (SEEDS if S > 1 else [0]):
+            silos = make_silos(S, how, seed)
+            silo_of = np.empty(n, dtype=int)
+            for s, ids in enumerate(silos):
+                silo_of[ids] = s
+            coloc.append(float(np.mean(silo_of[gold[:, 0]] == silo_of[gold[:, 1]])))
+            routed = allocate(silos) if S > 1 else None
+            for kind, params in CONFIGS.items():
+                indexes = []
+                for ids in silos:
+                    index = build(P[ids], kind)
+                    index.add(P[ids])
+                    indexes.append(index)
+                for param in params:
+                    per_silo, work = [], 0.0
+                    for ids, index in zip(silos, indexes):
+                        set_param(index, kind, param)
+                        sc, local, w = search_counting_work(index, kind, min(K, len(ids)))
+                        gi = np.where(local >= 0, ids[np.clip(local, 0, None)], -1)
+                        per_silo.append((sc, gi))
+                        work += w
+                    modes = {"full": np.full((nq, S), K)}
+                    if S > 1:
+                        modes["equal"] = np.full((nq, S), math.ceil(K / S))
+                        modes["routed"] = routed
+                    for mode, budgets in modes.items():
+                        top = merge(per_silo, budgets)
+                        nn = float(np.mean([len(set(a) & set(b)) / K for a, b in zip(top, exact_top)]))
+                        acc.setdefault((kind, param, mode), []).append((both_gold(top), nn, work))
+        for (kind, param, mode), runs in acc.items():
+            bg = [r[0].mean() for r in runs]
+            lo, hi = bootstrap_ci(runs[0][0])
+            row = {"silos": how, "S": S, "index": kind, "param": param, "budget": mode,
+                   "both_gold": round(float(np.mean(bg)), 4), "both_gold_seed_sd": round(float(np.std(bg)), 4),
+                   "ci95_seed0": [round(lo, 4), round(hi, 4)],
+                   "nn_recall": round(float(np.mean([r[1] for r in runs])), 4),
+                   "work_per_q": round(float(np.mean([r[2] for r in runs]))),
+                   "colocated": round(float(np.mean(coloc)), 4)}
+            rows.append(row)
+            print(json.dumps(row), flush=True)
 
-with open(OUT / "results.json", "w") as f:
-    json.dump(rows, f, indent=1)
-print("saved", OUT / "results.json")
+    with open(OUT / "results.json", "w") as f:
+        json.dump(rows, f, indent=1)
+    print("saved", OUT / "results.json")
