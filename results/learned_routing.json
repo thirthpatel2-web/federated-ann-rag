@@ -1,0 +1,82 @@
+{
+ "seed0": {
+  "centroid": {
+   "both_gold": 0.356,
+   "nn_recall": 0.7739000000000001,
+   "silos_searched": 2.285,
+   "distance_computations": 15664.956
+  },
+  "learned_nn": {
+   "both_gold": 0.385,
+   "nn_recall": 0.7871000000000001,
+   "silos_searched": 2.95,
+   "distance_computations": 20655.1
+  },
+  "learned_gold": {
+   "both_gold": 0.386,
+   "nn_recall": 0.7641,
+   "silos_searched": 3.123,
+   "distance_computations": 21777.722
+  }
+ },
+ "seed1": {
+  "centroid": {
+   "both_gold": 0.371,
+   "nn_recall": 0.7870000000000001,
+   "silos_searched": 2.218,
+   "distance_computations": 15197.103
+  },
+  "learned_nn": {
+   "both_gold": 0.39,
+   "nn_recall": 0.7989,
+   "silos_searched": 2.757,
+   "distance_computations": 19055.329
+  },
+  "learned_gold": {
+   "both_gold": 0.399,
+   "nn_recall": 0.7714,
+   "silos_searched": 3.042,
+   "distance_computations": 21046.315
+  }
+ },
+ "seed2": {
+  "centroid": {
+   "both_gold": 0.366,
+   "nn_recall": 0.7747,
+   "silos_searched": 2.245,
+   "distance_computations": 15408.244
+  },
+  "learned_nn": {
+   "both_gold": 0.392,
+   "nn_recall": 0.7894000000000001,
+   "silos_searched": 2.94,
+   "distance_computations": 20433.195
+  },
+  "learned_gold": {
+   "both_gold": 0.388,
+   "nn_recall": 0.7591000000000001,
+   "silos_searched": 3.155,
+   "distance_computations": 22266.525
+  }
+ },
+ "mean": {
+  "centroid": {
+   "both_gold": 0.36433333333333334,
+   "nn_recall": 0.7785333333333334,
+   "silos_searched": 2.2493333333333334,
+   "distance_computations": 15423.434333333333
+  },
+  "learned_nn": {
+   "both_gold": 0.389,
+   "nn_recall": 0.7918000000000002,
+   "silos_searched": 2.8823333333333334,
+   "distance_computations": 20047.874666666667
+  },
+  "learned_gold": {
+   "both_gold": 0.391,
+   "nn_recall": 0.7648666666666667,
+   "silos_searched": 3.106666666666667,
+   "distance_computations": 21696.854
+  }
+ }
+}

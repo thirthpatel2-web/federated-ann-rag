@@ -1,0 +1,32 @@
+{
+ "0.03": {
+  "both_gold": 0.324,
+  "silos_searched": 1.6396666666666668,
+  "distance_computations": 11484.187
+ },
+ "0.05": {
+  "both_gold": 0.36433333333333334,
+  "silos_searched": 2.2493333333333334,
+  "distance_computations": 15423.434333333333
+ },
+ "0.07": {
+  "both_gold": 0.38566666666666666,
+  "silos_searched": 3.0043333333333337,
+  "distance_computations": 20349.353333333333
+ },
+ "0.1": {
+  "both_gold": 0.38933333333333336,
+  "silos_searched": 4.266333333333333,
+  "distance_computations": 28642.968666666668
+ },
+ "0.15": {
+  "both_gold": 0.36633333333333334,
+  "silos_searched": 6.0409999999999995,
+  "distance_computations": 40187.106
+ },
+ "0.2": {
+  "both_gold": 0.3336666666666667,
+  "silos_searched": 7.221666666666667,
+  "distance_computations": 47863.93266666667
+ }
+}

@@ -75,6 +75,14 @@ What I take from this:
    budget, only 36% of the exact central top-10 survives, but the both-gold rate keeps 61% of
    its central value (28.1% vs 46.0%). A budget predictor trained on nearest-neighbour labels
    may therefore optimise the wrong target.
+7. **A small learned predictor does not beat a well-set baseline at equal cost.** A PyTorch MLP
+   (query embedding + centroid similarities, in the spirit of a kPred predictor) trained on 4,000
+   separate HotpotQA questions to share the budget across 10 topic silos reached 38.9% with
+   nearest-neighbour labels and 39.1% with gold-paragraph labels, searching 2.9-3.1 silos per
+   query. Centroid routing with a softer score at the same cost (temperature 0.07, 3.0 silos)
+   reached 38.6% (`learned_routing.py`, `routing_frontier.py`, 3 seeds). The two label types gave
+   similar gold recall but different nearest-neighbour recall (79% vs 76%). The temperature curve
+   is traced on the test questions, so it is if anything an optimistic baseline.
 
 ## Limitations and next steps
 
@@ -92,10 +100,12 @@ What I take from this:
 ## Run it
 
 ```
-pip install faiss-cpu sentence-transformers pyarrow matplotlib numpy
+pip install faiss-cpu sentence-transformers pyarrow matplotlib numpy torch
 # download the HotpotQA distractor validation parquet into data/ (URL in prepare.py)
 python prepare.py 1000      # corpus, questions, embeddings (~40 min on a laptop CPU)
 python federated_ann.py     # all settings -> results/results.json (~45 min)
 python plot.py              # charts
 python routing_cost.py      # search cost when zero-budget silos are skipped
+python learned_routing.py   # PyTorch budget predictor vs centroid routing (needs torch)
+python routing_frontier.py  # centroid routing cost-quality curve
 ```
